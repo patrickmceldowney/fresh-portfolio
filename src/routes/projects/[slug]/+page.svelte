@@ -33,7 +33,9 @@
 		{#if project?.demo}
 			<a href={project.demo} class="mr-5">Demo</a>
 		{/if}
-		<a href={project?.sourceCode}>Source Code</a>
+		{#if project?.sourceCode}
+			<a href={project.sourceCode}>Source Code</a>
+		{/if}
 	</div>
 
 	<article class="prose prose-xl">
