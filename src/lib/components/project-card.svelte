@@ -10,7 +10,7 @@
 	class="glass card shadow hover:-translate-y-1 hover:shadow-xl col-span-2 h transition-all duration-300 overflow-hidden"
 >
 	<a href={`/projects/${slug}`}>
-		<figure class="items-start h-48">
+		<figure class="!items-start h-48">
 			<img class="object-cover" src={url} alt={name} />
 		</figure>
 		<div class="card-body">
