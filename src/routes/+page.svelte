@@ -2,7 +2,6 @@
 	import ProjectCard from '../lib/components/project-card.svelte';
 
 	export let data;
-	console.log('data', data);
 </script>
 
 <svelte:head>

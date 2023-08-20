@@ -1,0 +1,42 @@
+<script>
+	import { marked } from 'marked';
+	export let data;
+	const project = data?.project;
+</script>
+
+<svelte:head>
+	<title>My Portfolio | {project?.name}</title>
+</svelte:head>
+
+<div class="flex flex-col gap-5">
+	<div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38">
+		<img src={project?.image[0].url} alt={project?.title} class="rounded-lg" />
+	</div>
+
+	<h1 class="text-4xl font-semibold mb-5">
+		{project?.name}
+	</h1>
+
+	<div class="flex justify-between">
+		<div>
+			{#if project?.tags}
+				{#each project.tags as tag}
+					<span class="badge badge-primary mr-2 hover:bg-primary-focus cursor-pointer">
+						{tag}
+					</span>
+				{/each}
+			{/if}
+		</div>
+	</div>
+
+	<div class="prose flex prose-a:text-primary hover:prose-a:text-primary-focus">
+		{#if project?.demo}
+			<a href={project.demo} class="mr-5">Demo</a>
+		{/if}
+		<a href={project?.sourceCode}>Source Code</a>
+	</div>
+
+	<article class="prose prose-xl">
+		{@html marked(project?.description)}
+	</article>
+</div>
