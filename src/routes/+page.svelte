@@ -1,8 +1,17 @@
-<script>
-	export let data;
+<script lang="ts">
+	import ProjectCard from '$lib/components/project-card.svelte';
 
-	console.log('data', data.projects);
+	export let data;
+	console.log('data', data);
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div>
+	<h1>Recent Projects by Me</h1>
+	{#if data?.projects && data?.projects?.length}
+		<div>
+			{#each data.projects as { name, slug, description, image }}
+				<ProjectCard {name} {slug} {description} url={image[0].url} />
+			{/each}
+		</div>
+	{/if}
+</div>
