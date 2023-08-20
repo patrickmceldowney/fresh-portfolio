@@ -5,13 +5,15 @@
 	export let description = '';
 </script>
 
-<div class="relative group card shadow-2xl col-span-2">
-	<img class="object-cover h-full" src={url} alt={name} />
+<div
+	class="glass card shadow hover:-translate-y-1 hover:shadow-xl col-span-2 h transition-all duration-300 overflow-hidden"
+>
 	<a href={`/projects/${slug}`}>
-		<div
-			class="absolute bottom-0 left-0 right-0 lg:opacity-0 group-hover:opacity-100 bg-primary p-4 duration-300 text-primary-content"
-		>
-			<h2 class="font-bold lg:text-xl">{name}</h2>
+		<figure>
+			<img class="object-cover" src={url} alt={name} />
+		</figure>
+		<div class="card-body">
+			<h2 class="card-title">{name}</h2>
 			<p class="text-sm lg:text-xl">{description.slice(0, 80)}...</p>
 		</div>
 	</a>
