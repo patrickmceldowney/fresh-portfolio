@@ -1,4 +1,4 @@
-<script lang="ts">
+<script >
 	export let url = '';
 	export let name = '';
 	export let slug = '';
