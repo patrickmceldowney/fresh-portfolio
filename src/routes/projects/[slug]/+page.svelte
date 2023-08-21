@@ -15,6 +15,9 @@
 
 	<h1 class="text-4xl font-semibold mb-5">
 		{project?.name}
+		<span class="text-lg">
+			({project?.completedDate ? `completed on ${project?.completedDate}` : 'in development'})
+		</span>
 	</h1>
 
 	<div class="flex justify-between">

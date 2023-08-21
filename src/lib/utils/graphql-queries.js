@@ -25,6 +25,7 @@ const PROJECT_FRAGMENT = gql`
 		image {
 			url
 		}
+		completedDate
 	}
 `;
 
