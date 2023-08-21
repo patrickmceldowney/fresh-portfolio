@@ -1,5 +1,4 @@
 <script>
-	import { marked } from 'marked';
 	export let url = '';
 	export let name = '';
 	export let slug = '';
@@ -15,7 +14,6 @@
 		</figure>
 		<div class="card-body">
 			<h2 class="card-title">{name}</h2>
-			<p class="text-sm lg:text-xl">{@html marked(description.slice(0, 80))}...</p>
 		</div>
 	</a>
 </div>
