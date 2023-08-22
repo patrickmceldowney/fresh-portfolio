@@ -8,7 +8,7 @@
 	<title>My Portfolio | {project?.name}</title>
 </svelte:head>
 
-<div class="flex flex-col gap-5">
+<div class="flex flex-col gap-5 max-w-3xl mx-auto">
 	<div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38">
 		<img src={project?.image[0].url} alt={project?.title} class="rounded-lg" />
 	</div>

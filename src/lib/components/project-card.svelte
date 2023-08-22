@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="glass card shadow hover:-translate-y-1 hover:shadow-xl col-span-2 h transition-all duration-300 overflow-hidden"
+	class="snap-center h-fit glass card shadow hover:shadow-xl col-span-2 h transition-all duration-300 overflow-hidden hover:animate-pulse"
 >
 	<a href={`/projects/${slug}`}>
 		<figure class="!items-start h-48">

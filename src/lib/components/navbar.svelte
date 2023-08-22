@@ -3,7 +3,7 @@
 	import Linkedin from './svgs/linkedin.svelte';
 </script>
 
-<div class="navbar mb-16 shadow-lg bg-neutral text-neutral-content sticky top-0 z-10">
+<div class="navbar shadow-lg bg-neutral text-neutral-content sticky top-0 z-10">
 	<div class="flex-1 px-2 mx-2">
 		<a href="/" class="text-lg font-bold">Portfolio</a>
 	</div>

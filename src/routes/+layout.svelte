@@ -4,6 +4,6 @@
 </script>
 
 <Navbar />
-<main class="container max-w-3xl mx-auto px-4 mb-20 relative">
+<main class="container mx-auto py-16 px-4 mb-20 relative">
 	<slot />
 </main>
