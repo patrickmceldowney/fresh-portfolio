@@ -3,7 +3,16 @@
 	import Navbar from '$lib/components/navbar.svelte';
 </script>
 
-<Navbar />
-<main class="container mx-auto py-16 px-4 mb-20 relative">
-	<slot />
-</main>
+<div class="grid gap-2 main-wrapper p-2 bg-black">
+	<Navbar />
+	<main class="max-h-screen">
+		<slot />
+	</main>
+</div>
+
+<style>
+	.main-wrapper {
+		grid-template-columns: auto 1fr;
+		grid-template-rows: auto;
+	}
+</style>

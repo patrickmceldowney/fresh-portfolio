@@ -8,10 +8,8 @@
 	<title>My Portfolio projects</title>
 </svelte:head>
 
-<div
-	class="grid grid-cols-1 grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 w-full gap-10 h-full"
->
-	<div class="p-10 bg-black bg-opacity-90 shadow self-start lg:col-span-2 card">
+<div class="grid grid-cols-3 w-full gap-2 h-full">
+	<div class="self-start col-span-2 main-wrapper">
 		<!-- <h1 class="font-bold text-center mb-20 text-5xl">Welcome to my Portfolio</h1> -->
 		<!-- Authors -->
 		{#each data?.authors as { name, intro, picture: { url } }}
@@ -29,10 +27,12 @@
 	<!-- Projects -->
 	{#if data?.projects && data?.projects?.length}
 		<div
-			class="grid gap-10 grid-cols-1 overflow-y-scroll snap-y self-start max-h-screen projects shadow-inner"
+			class="flex gap-5 flex-col items-start max-h-screen overflow-y-scroll justify-start snap-y projects main-wrapper"
 		>
 			{#each data.projects as { name, slug, description, image }}
-				<ProjectCard {name} {description} {slug} url={image[0].url} />
+				<div>
+					<ProjectCard {name} {description} {slug} url={image[0].url} />
+				</div>
 			{/each}
 		</div>
 	{/if}

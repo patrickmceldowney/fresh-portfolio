@@ -10,6 +10,9 @@ const config = {
 						maxWidth: null
 					}
 				}
+			},
+			colors: {
+				dark: '#191414'
 			}
 		}
 	},
