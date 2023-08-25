@@ -8,18 +8,16 @@
 	<title>My Portfolio projects</title>
 </svelte:head>
 
-<div class="grid grid-cols-3 w-full gap-2 h-full">
-	<div class="self-start col-span-2 main-wrapper">
-		<!-- <h1 class="font-bold text-center mb-20 text-5xl">Welcome to my Portfolio</h1> -->
-		<!-- Authors -->
+<div class="grid grid-cols-4 w-full gap-3 h-full">
+	<div class="self-start col-span-3 main-wrapper">
 		{#each data?.authors as { name, intro, picture: { url } }}
-			<div class="flex mb-40 items-end flex-col lg:flex-row">
+			<div class="flex flex-col lg:flex-row gap-6">
+				<img src={url} alt={name} class="mask mask-squircle h-48" />
+
 				<div class="mr-6">
 					<h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
 					<p class="text-xl mb-4">{intro}</p>
 				</div>
-
-				<img src={url} alt={name} class="mask mask-squircle h-48" />
 			</div>
 		{/each}
 	</div>

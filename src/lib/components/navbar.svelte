@@ -1,6 +1,6 @@
-<div class="text-neutral-content flex flex-col gap-2 items-center">
-	<div class="main-wrapper flex flex-col gap-5 w-full">
-		<a href="/" class="text-lg font-bold"><i class="fa-solid fa-house" /></a>
+<div class="text-white flex flex-col gap-2 items-center min-w-[64px]">
+	<div class="main-wrapper flex flex-col items-center gap-5 w-full p-4">
+		<a href="/" class="text-sm"><i class="fa-solid fa-house" /></a>
 	</div>
 
 	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -15,20 +15,15 @@
 		</ul>
 	</div> -->
 
-	<div class="flex flex-col gap-5 w-full main-wrapper">
-		<a href="/projects" class="btn btn-ghost btn-sm rounded-btn">
+	<div class="flex flex-col items-center gap-5 w-full main-wrapper p-4">
+		<a href="/projects" class="text-sm">
 			<i class="fa-solid fa-folder-open" />
 		</a>
-		<!-- <a href="/about" class="btn btn-ghost btn-sm rounded-btn">About</a> -->
-		<div class="px-4 flex items-center">
-			<a href="https://www.linkedin.com/in/patrick-mceldowney-291750a8/">
-				<i class="fa-brands fa-linkedin" />
-			</a>
-		</div>
-		<div class="px-4 flex items-center">
-			<a href="https://github.com/patrickmceldowney">
-				<i class="fa-brands fa-github-alt" />
-			</a>
-		</div>
+		<a class="text-sm" href="https://www.linkedin.com/in/patrick-mceldowney-291750a8/">
+			<i class="fa-brands fa-linkedin" />
+		</a>
+		<a class="text-sm" href="https://github.com/patrickmceldowney">
+			<i class="fa-brands fa-github-alt" />
+		</a>
 	</div>
 </div>

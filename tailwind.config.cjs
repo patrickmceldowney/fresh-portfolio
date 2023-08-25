@@ -12,7 +12,7 @@ const config = {
 				}
 			},
 			colors: {
-				dark: '#191414'
+				dark: '#121212'
 			}
 		}
 	},
