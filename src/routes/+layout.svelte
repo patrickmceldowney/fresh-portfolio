@@ -3,16 +3,9 @@
 	import Navbar from '$lib/components/navbar.svelte';
 </script>
 
-<div class="grid gap-3 main-wrapper p-2 bg-black">
+<div class="flex flex-col lg:flex-row gap-3 main-wrapper p-2 bg-black">
 	<Navbar />
-	<main class="max-h-screen">
+	<main class="max-h-screen flex-1">
 		<slot />
 	</main>
 </div>
-
-<style>
-	.main-wrapper {
-		grid-template-columns: auto 1fr;
-		grid-template-rows: auto;
-	}
-</style>
