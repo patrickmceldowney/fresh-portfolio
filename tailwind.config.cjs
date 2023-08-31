@@ -13,6 +13,11 @@ const config = {
 			},
 			colors: {
 				dark: '#121212'
+			},
+			fontFamily: {
+				kanit: ['Kanit', 'sans-serif'],
+				epilogue: ['Epilogue', 'sans-serif'],
+				neonderthaw: ['Neonderthaw', 'sans-serif']
 			}
 		}
 	},
