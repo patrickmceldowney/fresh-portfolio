@@ -39,9 +39,11 @@
 			{/each}
 		</div>
 
-		<div class="px-4 py-8 bg-gradient-to-b from-10% from-[#091f3c] via-[#0d1420] to-transparent">
+		<div
+			class="w-full px-4 py-8 bg-gradient-to-b from-10% from-[#091f3c] via-[#0d1420] to-transparent"
+		>
 			<h2 class="text-2xl font-bold">Projects</h2>
-			<div class="grid auto-cols-auto gap-5 my-3">
+			<div class="flex flex-wrap justify-evenly gap-5 my-3">
 				{#each data.projects as { name, slug, description, image }}
 					<ProjectCard {name} {description} {slug} url={image[0].url} />
 				{/each}
@@ -55,7 +57,7 @@
 			class="flex gap-5 flex-col items-start lg:max-h-screen overflow-y-scroll justify-start snap-y projects main-wrapper shrink max-w-[400px] resize-y"
 		>
 			{#each data.experiences as experience}
-				<div>
+				<div class="w-full">
 					<ExperienceCard {experience} />
 				</div>
 			{/each}
