@@ -14,6 +14,19 @@ export const authorQuery = gql`
 	}
 `;
 
+export const experienceQuery = gql`
+	query GetExperiences {
+		experiences {
+			jobTitle
+			companyName
+			jobHighlights
+			activeJob
+			startDate
+			endDate
+		}
+	}
+`;
+
 const PROJECT_FRAGMENT = gql`
 	fragment ProjectDetails on Project {
 		name

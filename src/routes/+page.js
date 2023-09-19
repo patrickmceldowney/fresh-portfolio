@@ -1,20 +1,23 @@
 import { client } from '$lib/utils/graphql-client';
-import { authorQuery, projectsQuery } from '$lib/utils/graphql-queries';
+import { authorQuery, projectsQuery, experienceQuery } from '$lib/utils/graphql-queries';
 
 export async function load() {
 	try {
-		const [authorRes, projectsRes] = await Promise.all([
+		const [authorRes, projectsRes, experienceRes] = await Promise.all([
 			client.request(authorQuery),
-			client.request(projectsQuery)
+			client.request(projectsQuery),
+			client.request(experienceQuery)
 		]);
 		const { authors } = authorRes;
 		const { projects } = projectsRes;
+		const { experiences } = experienceRes;
 
 		return {
 			projects,
-			authors
+			authors,
+			experiences
 		};
 	} catch (e) {
-		console.error('Error', error);
+		console.error('Error', e);
 	}
 }

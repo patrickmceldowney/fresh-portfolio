@@ -4,7 +4,7 @@
 	</div>
 
 	<div class="flex lg:flex-col items-center gap-5 w-full main-wrapper p-4">
-		<a href="/projects" class="text-xl">
+		<a href="/" class="text-xl">
 			<i class="fa-solid fa-folder-open text-white" />
 		</a>
 		<a class="text-xl" href="https://www.linkedin.com/in/patrick-mceldowney-291750a8/">

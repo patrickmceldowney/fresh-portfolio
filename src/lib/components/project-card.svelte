@@ -6,14 +6,10 @@
 </script>
 
 <div
-	class="snap-center h-fit glass card min-h-fit shadow hover:shadow-xl col-span-2 h transition-all duration-300 overflow-hidden hover:animate-pulse"
+	class="snap-center rounded w-48 p-4 glass shadow hover:shadow-xl transition-all duration-300 overflow-hidden hover:animate-pulse"
 >
-	<a href={`/projects/${slug}`}>
-		<figure class="!items-start h-48">
-			<img class="object-cover" src={url} alt={name} />
-		</figure>
-		<div class="card-body">
-			<h2 class="card-title">{name}</h2>
-		</div>
+	<a href={`/projects/${slug}`} class="flex flex-col items-center gap-4">
+		<img class="object-cover w-40 h-40 rounded" src={url} alt={name} />
+		<h2 class="card-title">{name}</h2>
 	</a>
 </div>
