@@ -20,9 +20,9 @@
 
 <div class="flex flex-col lg:flex-row w-full gap-3 h-full">
 	<div class="self-start flex-1 col-span-3 main-wrapper p-0 relative">
-		<div class="h-96 relative overflow-hidden">
+		<div class="h-96 relative">
 			<div
-				class="w-full absolute top-0 left-0 right-0 rounded-tr-lg rounded-tl-lg overflow-hidden z-[1]"
+				class="w-full absolute top-0 left-0 right-0 rounded-tr-lg overflow-hidden rounded-tl-lg z-[1]"
 			>
 				<canvas
 					id="gradient-canvas"
@@ -43,7 +43,7 @@
 			class="w-full px-4 py-8 bg-gradient-to-b from-10% from-[#091f3c] via-[#0d1420] to-transparent"
 		>
 			<h2 class="text-2xl font-bold">Projects</h2>
-			<div class="flex flex-wrap justify-evenly gap-5 my-3">
+			<div class="flex flex-wrap justify-between gap-5 my-3">
 				{#each data.projects as { name, slug, description, image }}
 					<ProjectCard {name} {description} {slug} url={image[0].url} />
 				{/each}
