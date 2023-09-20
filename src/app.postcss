@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	-webkit-scrollbar-thumb {
+		background: red;
+	}
+}
+
 @layer base {
 	:root {
 		@apply bg-black;
@@ -15,5 +25,15 @@
 @layer components {
 	.main-wrapper {
 		@apply rounded-lg p-4 bg-dark;
+	}
+
+	.custom-scroll::-webkit-scrollbar-track {
+		@apply bg-dark;
+	}
+	.custom-scroll::-webkit-scrollbar-thumb {
+		background: #d3d3d3;
+	}
+	.custom-scroll::-webkit-scrollbar {
+		width: 5px;
 	}
 }

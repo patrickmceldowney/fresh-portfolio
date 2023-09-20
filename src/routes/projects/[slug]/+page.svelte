@@ -8,9 +8,9 @@
 	<title>My Portfolio | {project?.name}</title>
 </svelte:head>
 
-<div class="flex flex-col gap-5 max-w-3xl mx-auto">
-	<div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38">
-		<img src={project?.image[0].url} alt={project?.title} class="rounded-lg" />
+<div class="flex flex-col gap-5 w-full custom-scroll overflow-y-scroll h-screen main-wrapper">
+	<div class="w-full max-w-md lg:max-w-3xl rounded-lg">
+		<img src={project?.image[0].url} alt={project?.title} class="w-full h-auto rounded-lg" />
 	</div>
 
 	<h1 class="text-4xl font-semibold mb-5">
