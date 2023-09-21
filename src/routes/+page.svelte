@@ -12,15 +12,21 @@
 	});
 
 	let canvas;
+
+	function comparePriority(a, b) {
+		if (!a.priority || !b.priority) return -1;
+		const priorityOrder = { High: 1, Medium: 2, Low: 3 };
+		return priorityOrder[a.priority] - priorityOrder[b.priority];
+	}
 </script>
 
 <svelte:head>
 	<title>My Portfolio projects</title>
 </svelte:head>
 
-<div class="flex flex-col lg:flex-row w-full gap-3 h-screen overflow-hidden custom-scroll">
+<div class="flex flex-col lg:flex-row w-full gap-3">
 	<div
-		class="self-start flex-1 col-span-3 main-wrapper p-0 relative h-screen overflow-y-scroll custom-scroll"
+		class="self-start flex-1 col-span-3 main-wrapper p-0 relative h-screen overflow-y-scroll custom-scroll bg-gradient-to-b from-10% from-[#091f3c] via-[#0d1420] to-[#053127]"
 	>
 		<div class="h-96 relative overflow-hidden">
 			<div
@@ -41,22 +47,19 @@
 			{/each}
 		</div>
 
-		<div
-			class="w-full px-4 py-8 bg-gradient-to-b from-10% from-[#091f3c] via-[#0d1420] to-[#053127] h-full"
-		>
+		<div class="w-full px-4 py-8 h-full">
 			<h2 class="text-2xl font-bold">Projects</h2>
 			<ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-8">
-				{#each data.projects as { name, slug, description, image }}
+				{#each (data.projects || []).sort(comparePriority) as { name, slug, description, image }}
 					<ProjectCard {name} {description} {slug} url={image[0].url} />
 				{/each}
 			</ul>
 		</div>
 	</div>
 
-	<!-- Projects -->
 	{#if data?.experiences && data?.experiences?.length}
 		<div
-			class="flex gap-5 flex-col items-start lg:max-h-screen justify-start snap-y projects main-wrapper shrink max-w-[400px] resize-y"
+			class="flex gap-5 flex-col items-start h-fit max-h-screen justify-start snap-y projects main-wrapper shrink max-w-full lg:max-w-[400px] resize-y overflow-y-scroll custom-scroll"
 		>
 			{#each data.experiences as experience}
 				<div class="w-full">

@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div class="flex flex-col gap-5 w-full custom-scroll overflow-y-scroll h-screen main-wrapper">
-	<div class="w-full max-w-md lg:max-w-3xl rounded-lg">
+	<div class="w-full max-w-md lg:max-w-3xl rounded-lg self-center">
 		<img src={project?.image[0].url} alt={project?.title} class="w-full h-auto rounded-lg" />
 	</div>
 

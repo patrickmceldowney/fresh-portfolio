@@ -19,7 +19,9 @@ export const experienceQuery = gql`
 		experiences {
 			jobTitle
 			companyName
-			jobHighlights
+			jobHighlights {
+				html
+			}
 			activeJob
 			startDate
 			endDate
@@ -35,6 +37,7 @@ const PROJECT_FRAGMENT = gql`
 		tags
 		demo
 		sourceCode
+		priority
 		image {
 			url
 		}
