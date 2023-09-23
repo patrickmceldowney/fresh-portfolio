@@ -5,7 +5,7 @@
 
 <div class="flex flex-col lg:flex-row gap-3 p-2">
 	<Navbar />
-	<main class="max-h-screen flex-1">
+	<main class="flex-1 pb-16 lg:pb-0">
 		<slot />
 	</main>
 </div>

@@ -44,7 +44,7 @@
 </div>
 
 <div
-	class="p-4 bg-black fixed bottom-0 right-0 left-0 flex items-center gap-5 w-full lg:hidden z-20 justify-evenly"
+	class="p-4 bg-black fixed bottom-0 right-0 left-0 flex items-center gap-5 w-full lg:hidden z-20 justify-evenly shadow-white shadow-lg"
 >
 	{#each links as link}
 		<a
