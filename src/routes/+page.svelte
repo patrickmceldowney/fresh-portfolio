@@ -53,7 +53,7 @@
 
 		<div
 			id="projects"
-			class=" px-4 py-8 main-wrapper max-h-[500px] lg:max-h-full overflow-y-scroll custom-scroll bg-gradient-to-b from-10% from-[#3a3aff] to-dark"
+			class=" px-4 py-8 main-wrapper max-h-[300px] lg:max-h-full overflow-y-scroll custom-scroll bg-gradient-to-b from-10% from-[#3a3aff] to-dark"
 		>
 			<h2 class="text-2xl font-medium tracking-wider">Projects</h2>
 			<ul class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 py-8">
@@ -67,7 +67,7 @@
 	{#if data?.experiences && data?.experiences?.length}
 		<div
 			id="experience"
-			class="flex lg:sticky top-2 gap-5 flex-col items-start w-full h-fit max-h-screen justify-start snap-y projects main-wrapper md:max-w-[250px] xl:max-w-[400px] resize-y overflow-y-scroll custom-scroll"
+			class="flex lg:sticky top-2 gap-5 flex-col items-start w-full h-fit justify-start main-wrapper md:max-w-[250px] xl:max-w-[400px] resize-y"
 		>
 			<h2 class="text-2xl font-medium tracking-wider">Experience</h2>
 			<!-- {#each data.experiences as experience}
