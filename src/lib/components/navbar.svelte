@@ -6,8 +6,8 @@
 			target: ''
 		},
 		{
-			url: '#projects',
-			icon: 'fa-solid fa-folder-open',
+			url: '#experience',
+			icon: 'fa-solid fa-briefcase',
 			target: ''
 		},
 		{
