@@ -22,7 +22,7 @@
 	function formatDateTime(date) {
 		let newDate = new Date(date);
 		console.log(newDate);
-		return `${newDate.getFullYear()}/${newDate.getMonth()}/${newDate.getDate()}`;
+		return `${newDate.getFullYear()}/${newDate.getMonth() + 1}/${newDate.getDate()}`;
 	}
 </script>
 
