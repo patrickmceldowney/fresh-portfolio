@@ -41,7 +41,9 @@
 		{/if}
 	</div>
 
-	<article class="prose prose-xl">
+	<article
+		class="prose prose-zinc text-xl text-gray-300 prose-a:text-gray-300 prose-ul:text-gray-300 prose-strong:text-gray-300"
+	>
 		{@html marked(project?.description)}
 	</article>
 </div>
