@@ -18,8 +18,6 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"graphql": "^16.8.0",
-		"graphql-request": "^6.1.0",
 		"marked": "^7.0.4",
 		"postcss": "^8.4.24",
 		"postcss-load-config": "^4.0.1",

@@ -1,13 +1,8 @@
 <script>
 	import { marked } from 'marked';
-	export let data;
+	import { author } from '$lib/utils/data';
 
-	const {
-		name,
-		intro,
-		bio,
-		picture: { url }
-	} = data?.authors[0];
+	const { name, intro } = author;
 </script>
 
 <svelte:head>
@@ -22,9 +17,9 @@
 		<p class="text-xl mb-4">{intro}</p>
 	</div>
 
-	<img src={url} alt={name} class="mask mask-squircle h-48" />
+	<!-- <img src={url} alt={name} class="mask mask-squircle h-48" /> -->
 </div>
 
 <article div class="prose prose-lg">
-	{@html marked(bio)}
+	{@html marked(intro)}
 </article>

@@ -125,7 +125,6 @@ export const author = {
 	name: 'Patrick McEldowney',
 	intro:
 		"Hello 👋  I'm a full stack software engineer based in Kansas City, Missouri. From shaping user-friendly interfaces to architecting powerful back-end systems, I'm here to showcase how I blend creativity with code to craft meaningful solutions. ",
-	bio: null,
 	slug: 'patrick-mceldowney'
 };
 
