@@ -21,7 +21,6 @@
 
 	function formatDateTime(date) {
 		let newDate = new Date(date);
-		console.log(newDate);
 		return `${newDate.getFullYear()}/${newDate.getMonth() + 1}/${newDate.getDate()}`;
 	}
 </script>
@@ -43,11 +42,16 @@
 						data-js-darken-top
 					/>
 				</div>
-				{#each data?.authors as { name, intro, picture: { url } }}
-					<div class="z-20 relative flex flex-col p-4 h-full justify-end">
-						<h1 class="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-wider">{name}</h1>
-					</div>
-				{/each}
+				<div class="z-20 relative flex flex-col p-4 h-full justify-between">
+					<h1
+						class="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-wider justify-self-start"
+					>
+						{data.author.name}
+					</h1>
+					<h1 class="text-md sm:text-lg lg:text-xl tracking-wider justify-self-end">
+						{data.author.intro}
+					</h1>
+				</div>
 			</div>
 		</div>
 
@@ -58,13 +62,13 @@
 			<h2 class="text-2xl font-medium tracking-wider">Projects</h2>
 			<ul class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 py-8">
 				{#each (data.projects || []).sort(comparePriority) as { name, slug, description, image }}
-					<ProjectCard {name} {description} {slug} url={image[0].url} />
+					<ProjectCard {name} {description} {slug} url={image} />
 				{/each}
 			</ul>
 		</div>
 	</div>
 
-	{#if data?.experiences && data?.experiences?.length}
+	{#if data?.experience && data?.experience?.length}
 		<div
 			id="experience"
 			class="flex lg:sticky top-2 gap-5 flex-col items-start w-full h-fit justify-start main-wrapper md:max-w-[250px] xl:max-w-[400px] resize-y"
@@ -77,10 +81,10 @@
 			{/each} -->
 			<div class="flow-root">
 				<ul class="-mb-8">
-					{#each data.experiences as experience, i}
+					{#each data.experience as experience, i}
 						<li>
 							<div class="relative pb-8">
-								{#if i != data.experiences.length - 1}
+								{#if i != data.experience.length - 1}
 									<span
 										class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200"
 										aria-hidden="true"
@@ -110,10 +114,6 @@
 											<time datetime={formatDateTime(experience.startDate)}>
 												{formatDateTime(experience.startDate)}
 											</time>
-											<!-- end date -->
-											<!-- {#if experience.jobActive}
-												<time datetime="2020-09-20">{new Date(experience.endDate).getDate()}</time>
-											{/if} -->
 										</div>
 									</div>
 								</div>

@@ -2,7 +2,6 @@
 	export let url = '';
 	export let name = '';
 	export let slug = '';
-	export let description = '';
 </script>
 
 <li
