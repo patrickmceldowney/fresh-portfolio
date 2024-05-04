@@ -42,7 +42,8 @@ export const projects = [
 	{
 		name: 'CDLLife Graph API',
 		slug: 'cdllife-graph-api',
-		description: "A graph API built for CDLLife that is roughly based on Facebook's Graph API.",
+		description:
+			'A graph API built on top of a MongoDB express API. Created to make traversing our collections much easier and have better access control on certain fields.',
 		tags: ['JavaScript'],
 		priority: 'High',
 		image: '/projects/cdllife_graph_api.png',

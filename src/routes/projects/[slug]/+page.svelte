@@ -23,26 +23,28 @@
 		<div class="flex flex-col gap-3">
 			<h1 class="text-4xl font-semibold mb-5">
 				{project?.name}
-				<span class="text-lg">
-					({project?.completedDate ? `completed on ${project?.completedDate}` : 'in development'})
-				</span>
 			</h1>
 
-			<div class="flex justify-between">
-				<div>
-					{#if project?.tags}
-						{#each project.tags as tag}
-							<span class="badge badge-primary mr-2 hover:bg-primary-focus cursor-pointer">
-								{tag}
-							</span>
-						{/each}
-					{/if}
-				</div>
+			<div class="flex gap-2 flex-wrap">
+				{#if project?.tags}
+					{#each project.tags as tag}
+						<span class="badge badge-primary hover:bg-primary-focus">
+							{tag}
+						</span>
+					{/each}
+				{/if}
+				{#if project?.tools}
+					{#each project.tools as tool}
+						<span class="badge badge-primary hover:bg-primary-focus">
+							{tool}
+						</span>
+					{/each}
+				{/if}
 			</div>
 
 			<div class="prose flex prose-a:text-primary hover:prose-a:text-primary-focus">
-				{#if project?.demo}
-					<a href={project.demo} class="mr-5">Demo</a>
+				{#if project?.url}
+					<a href={project.url} class="mr-5">Demo</a>
 				{/if}
 				{#if project?.sourceCode}
 					<a href={project.sourceCode}>Source Code</a>
