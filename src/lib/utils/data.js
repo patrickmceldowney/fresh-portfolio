@@ -1,14 +1,24 @@
 export const projects = [
 	{
-		name: 'Maze Solver',
-		slug: 'maze-solver',
+		name: 'CDLConnect Pro',
+		slug: 'cdlconnect-pro',
 		description:
-			'An investigative project to highlight different graph traversal and pathfinding algorithms.',
-		tags: ['Python'],
-		sourceCode: 'https://github.com/patrickmceldowney/maze-solver',
+			'A comprehensive and robust recruiting platform designed to streamline and clarify every stage of the recruitment funnel, making the entire process more transparent, efficient, and effective for both recruiters and candidates.',
+		tags: ['SQL', 'Python', 'TypeScript', 'CSS'],
+		url: 'https://pro.cdlconnect.io/login',
 		priority: 'High',
-		image: '/projects/combo400_solved.png',
-		tools: ['Daedalus']
+		image: '/projects/cdlconnect_pro.png',
+		tools: ['Tailwind', 'BigQuery', 'MongoDB', 'SvelteKit']
+	},
+	{
+		name: 'CDLConnect',
+		slug: 'cdlconnect',
+		description: 'A landing page for the CDLConnect product suite.',
+		tags: ['TypeScript', 'CSS'],
+		url: 'https://cdlconnect.io/',
+		priority: 'High',
+		image: '/projects/cdlconnect.png',
+		tools: ['SvelteKit']
 	},
 	{
 		name: 'CDLLife Mobile App',
@@ -49,26 +59,17 @@ export const projects = [
 		image: '/projects/cdllife_graph_api.png',
 		tools: ['MongoDB']
 	},
+
 	{
-		name: 'CDLConnect',
-		slug: 'cdlconnect',
-		description: 'A landing page for the CDLConnect product suite.',
-		tags: ['TypeScript', 'CSS'],
-		url: 'https://cdlconnect.io/',
-		priority: 'High',
-		image: '/projects/cdlconnect.png',
-		tools: ['SvelteKit']
-	},
-	{
-		name: 'Clarity',
-		slug: 'clarity',
+		name: 'Maze Solver',
+		slug: 'maze-solver',
 		description:
-			'An attribution tool for recruiters to see how and where they can increase their revenue.',
-		tags: ['CSS', 'Python', 'TypeScript'],
-		url: 'https://cdlclarity.io/login',
+			'An investigative project to highlight different graph traversal and pathfinding algorithms.',
+		tags: ['Python'],
+		sourceCode: 'https://github.com/patrickmceldowney/maze-solver',
 		priority: 'High',
-		image: '/projects/clarity.png',
-		tools: ['Tailwind', 'BigQuery', 'MongoDB', 'SvelteKit']
+		image: '/projects/combo400_solved.png',
+		tools: ['Daedalus']
 	},
 	{
 		name: 'CDLLife Jobs',
@@ -134,7 +135,9 @@ export const experience = [
 		jobTitle: 'Senior Software Engineer Technical Manager',
 		companyName: 'CDLLife',
 		description:
-			'🌟 Spearheaded the end-to-end development and continuous enhancement of novel features within our proprietary lead generation services.🤝 urlnstrated effective leadership by overseeing task allocation, conducting code reviews, and performing comprehensive performance evaluations for a high-performing engineering team.🧠 Focused on fostering a collaborative, innovative, and continuous learning environment to drive team success.🔄 Played a pivotal role in the creation, upkeep, and optimization of our internal graph API, contributing to improved data handling and analytics.',
+			'🌟 Spearhead the end-to-end development and continuous enhancement of novel features within our proprietary lead generation web APIs.\
+			🔄 Play a pivotal role in the creation, upkeep, and optimization of our internal analytics platform.\
+			🤝 Illustrate effective leadership by overseeing task allocation, conducting code reviews, and performing comprehensive performance evaluations.',
 		activeJob: true,
 		startDate: '2021-02-01',
 		endDate: null
@@ -143,7 +146,9 @@ export const experience = [
 		jobTitle: 'Senior Web Developer',
 		companyName: 'MAKE Digital Group',
 		description:
-			'👨‍💼 Managed a development team throughout the entire lifecycle of new website and web app projects, ensuring timely delivery and high-quality results.📚 Stayed at the forefront of industry trends by immersing myself in the latest developments, best practices, and emerging technologies.🔒 Maintained a vigilant watch over server performance and security, skillfully configuring NGINX and Apache web servers, and conducting regular audits and security assessments to safeguard data integrity and privacy.',
+			'👨‍💼 Managed a development team throughout the entire lifecycle of new website and web app projects, ensuring timely delivery and high-quality results.\
+			📚 Stayed at the forefront of industry trends by immersing myself in the latest developments, best practices, and emerging technologies.\
+			🔒 Maintained a vigilant watch over server performance and security, skillfully configuring NGINX and Apache web servers, and conducting regular audits and security assessments to safeguard data integrity and privacy.',
 		activeJob: false,
 		startDate: '2019-08-05',
 		endDate: '2021-02-01'
@@ -152,7 +157,10 @@ export const experience = [
 		jobTitle: 'App Developer',
 		companyName: 'Ad Astra Information Systems',
 		description:
-			'🌟 Spearheaded the end-to-end development and continuous enhancement of novel features within our proprietary lead generation services.🤝 urlnstrated effective leadership by overseeing task allocation, conducting code reviews, and performing comprehensive performance evaluations for a high-performing engineering team.🧠 Focused on fostering a collaborative, innovative, and continuous learning environment to drive team success.🔄 Played a pivotal role in the creation, upkeep, and optimization of our internal graph API, contributing to improved data handling and analytics.',
+			'🌟 Spearheaded the end-to-end development and continuous enhancement of novel features within our proprietary lead generation services.\
+			🤝 urlnstrated effective leadership by overseeing task allocation, conducting code reviews, and performing comprehensive performance evaluations for a high-performing engineering team.\
+			🧠 Focused on fostering a collaborative, innovative, and continuous learning environment to drive team success.\
+			🔄 Played a pivotal role in the creation, upkeep, and optimization of our internal graph API, contributing to improved data handling and analytics.',
 		activeJob: false,
 		startDate: '2018-12-01',
 		endDate: '2019-08-01'

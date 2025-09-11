@@ -44,11 +44,11 @@
 				</div>
 				<div class="z-20 relative flex flex-col p-4 h-full justify-between">
 					<h1
-						class="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-wider justify-self-start"
+						class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-wider justify-self-start"
 					>
 						{data.author.name}
 					</h1>
-					<h1 class="text-md sm:text-lg lg:text-xl tracking-wider justify-self-end">
+					<h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-wider justify-self-end">
 						{data.author.intro}
 					</h1>
 				</div>
@@ -106,8 +106,8 @@
 									<div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
 										<div>
 											<p class="text-sm">
-												{experience?.jobTitle} at
-												<span class="font-medium text-[#3a3aff]">{experience.companyName}</span>
+												{experience?.jobTitle} -
+												<span class="font-medium text-[#ff61ab]">{experience.companyName}</span>
 											</p>
 										</div>
 										<div class="whitespace-nowrap text-right text-sm">
